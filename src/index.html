@@ -17,7 +17,6 @@
     >
   </head>
   <body>
-    <h1>HTML Form</h1>
     <div class="form">
       <form
         action="https://mate-academy-form-lesson.herokuapp.com/create-application"
@@ -58,7 +57,7 @@
             for="age"
             class="form_element"
           >
-            How old are You:
+            How old are You?
             <input
               type="number"
               name="age"
@@ -117,7 +116,7 @@
 
           <label
             for="password"
-            class="form_element"
+            class="form_element no_margin"
           >
             Password:
             <input
@@ -183,16 +182,17 @@
             for="brand"
             class="form_element"
           >
-            What are you favorite brand of cars?
+            What are your favorite brand of cars?
             <select
               name="brand"
               id="brand"
-              size="3"
+              size="4"
               multiple
             >
               <option value="bmw">BMW</option>
               <option value="audi">Audi</option>
               <option value="lada">Lada</option>
+              <option value="none"></option>
             </select>
           </label>
 
@@ -200,13 +200,14 @@
             for="rate"
             class="form_element no_margin"
           >
-            How do you rate our work?
+            How do your rate our work?
             <input
               type="range"
               name="rate"
               id="rate"
               min="0"
               max="100"
+              value="0"
             >
           </label>
         </fieldset>
